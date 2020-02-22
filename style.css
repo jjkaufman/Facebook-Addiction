@@ -45,7 +45,7 @@
   width: var(--fluid-fill);
   height: 2.4em;
   position: relative;
-  right: -2.8em;
+  right:  -3.8em;
   z-index: 5;
   display: inline-block;
   content: var(--value);

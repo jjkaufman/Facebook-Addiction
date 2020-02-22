@@ -1,0 +1,83 @@
+#container {
+  font-family: Helvetica, Arial, sans-serif;;
+  font-size: 2em;
+  color: #333;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3967562/facebook.png);
+  width: 30em;
+  height: 600px;
+  background-size: 100% auto;
+}
+#welcome{
+    margin-left: 5em;
+}
+#strength{
+  font-weight: bold;
+  margin-left: 5em;
+}
+#addiction{
+  position: absolute;
+  left: -2em;
+  top: 3.5em;
+}
+.needle-slider {
+  
+  font-size: 1.5em;
+  outline: none !important;
+  background: none;
+}
+.needle-slider::before {
+  position: absolute;
+  left: 8.2em;
+  display: inline-block;
+  height: 5em;
+  width: 10em;
+  margin-right: 5px;
+  content: "";
+  z-index: 1;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3967562/syringenohandle.png)
+    no-repeat 0 0;
+  background-size: 100% 100%;
+  background-position: 0em 0em;
+}
+.needle-slider::after {
+  margin-top: 1.25em;
+  background: #3b5998;
+  width: var(--fluid-fill);
+  height: 2.4em;
+  position: relative;
+  right: -2.8em;
+  z-index: 5;
+  display: inline-block;
+  content: var(--value);
+  color: white;
+  font-family: Courier New;
+  font-weight: bold;
+  text-align: left;
+  line-height: 2.5;
+}
+.needle-slider {
+  width: 11em;
+  -webkit-appearance: none;
+  appearance: none;
+  z-index: 1000;
+}
+.needle-slider::-webkit-slider-thumb {
+  margin-top: 1em;
+  margin-left: 3.2em;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 5em; /* Set a specific slider handle width */
+  height: 3em; /* Slider handle height */
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3967562/handle.png);
+  background-size: 100% 100%;
+  background-position: left center;
+  z-index: 10000;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.needle-slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: black; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
